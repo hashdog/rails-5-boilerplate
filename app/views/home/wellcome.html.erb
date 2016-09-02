@@ -1,0 +1,47 @@
+<style type="text/css" media="screen" charset="utf-8">
+  body {
+    font-family: Georgia, sans-serif;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    color: #000;
+  }
+
+  h1 {
+    color: #f85d5d;
+    text-shadow: 1px 1px 5px #eee;
+  }
+
+  p { font-family: monospace; }
+
+  section {
+    margin: 0 auto 2rem;
+    padding: 1rem 0 0;
+    text-align: center;
+  }
+  img{
+  	max-width: 100%;
+  }
+</style>
+<div class="container-fluid">
+	<div class="row">
+    <section class="col-sx-12">
+      <p>
+        <a href="http://hashdog.com">
+          <%= image_tag 'logo.svg', alt: "HashDog" %>
+        </a>
+      </p>
+
+      <h1>Wellcome [client name]! We're ready!</h1>
+
+      <%= image_tag 'team.png', alt: "HashDog Team" %>
+
+      <p class="version">
+        <strong>Rails version:</strong> <%= Rails.version %><br />
+        <strong>Ruby version:</strong> <%= RUBY_VERSION %> (<%= RUBY_PLATFORM %>)
+      </p>
+    </section>
+	</div>
+</div>
